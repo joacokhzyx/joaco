@@ -75,7 +75,18 @@ export const metadata: Metadata = {
     images: ["/banner.png"],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/banner.png",
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "Joaco",
+    statusBarStyle: "black-translucent",
+    capable: true,
   },
   robots: {
     index: true,
