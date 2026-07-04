@@ -1,0 +1,2062 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.repomixignore
+next.config.mjs
+package.json
+postcss.config.mjs
+public/001.jpg
+public/002.jpg
+public/003.jpg
+public/004.jpg
+public/005.jpg
+public/006.jpg
+public/007.jpg
+public/008.jpg
+public/009.jpg
+public/010.jpg
+public/011.jpg
+public/012.jpg
+public/013.jpg
+public/014.jpg
+public/015.jpg
+public/016.jpg
+public/017.jpg
+public/018.jpg
+public/019.jpg
+public/020.jpg
+public/021.jpg
+public/022.jpg
+public/023.jpg
+public/024.jpg
+public/025.jpg
+public/026.jpg
+public/027.jpg
+public/028.jpg
+public/029.jpg
+public/030.jpg
+public/031.jpg
+public/032.jpg
+public/033.jpg
+public/034.jpg
+public/035.jpg
+public/hero.png
+public/logo.svg
+public/Proteus_Image.png
+public/Regen_Image.png
+src/app/globals.css
+src/app/layout.tsx
+src/app/page.tsx
+src/components/Deeper.tsx
+src/components/Ethos.tsx
+src/components/EthosList.tsx
+src/components/EthosWave.tsx
+src/components/Gallery.tsx
+src/components/Hero.tsx
+src/components/Loader.tsx
+src/components/Logo.tsx
+src/components/Navbar.tsx
+src/components/OrbitalGallery.tsx
+src/components/RollLink.tsx
+src/components/SmoothScroll.tsx
+src/components/Works.tsx
+src/components/WorksShowCase.tsx
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".repomixignore">
+README.md
+pnpm-lock.yaml
+pnpm-workspace.yaml
+tsconfig.json
+.gitignore
+node_modules
+.next
+</file>
+
+<file path="next.config.mjs">
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+export default nextConfig;
+</file>
+
+<file path="package.json">
+{
+  "name": "joaco-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.14",
+    "next": "latest",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+</file>
+
+<file path="postcss.config.mjs">
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+
+export default config;
+</file>
+
+<file path="public/logo.svg">
+<svg width="180" height="36" viewBox="0 0 180 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 35.776c0-.28 1.222-2.405 2.984-5.208s1.575-2.756 10.81-2.756c7.12 0 7.12 0 7.167-13.828.07-13.85.07-13.85 3.83-13.92 6.157-.094 5.616-1.215 5.452 11.515-.094 5.909-.259 11.118-.4 11.561a6.8 6.8 0 0 1-.658 1.519c-.634 1.027-8.953 9.646-9.799 10.16-1.668 1.028-3.055 1.168-11.443 1.168-4.841 0-7.943-.094-7.943-.21m46.175-.163c-.752-.187-1.81-.584-2.35-.911-1.058-.63-8.389-8.128-9.352-9.576-1.387-2.08-1.81-7.591-.87-11.235C35.272 7.444 40.277 2.166 46.41.461c1.786-.49 7.355-.444 9.165.093 1.339.397 1.597.607 5.357 4.438 6.462 6.54 6.697 6.914 7.19 10.861.682 5.349-1.221 10.697-5.24 14.668-2.208 2.15-4.511 3.597-7.425 4.625-1.762.607-2.35.7-4.935.77-1.997.024-3.383-.046-4.347-.303m9-8.595c1.434-.794 2.844-2.243 3.548-3.62 1.034-1.986 1.199-3.294 1.199-9.437 0-5.792 0-5.792-5.57-5.722-5.498.07-5.615.07-6.931.7-1.81.841-3.572 2.616-4.489 4.578-.752 1.565-.752 1.565-.822 7.942-.07 6.376-.07 6.376 5.874 6.306 5.946-.07 5.946-.07 7.191-.748M86.97 35.73c-7.825-1.005-13.982-7.007-15.298-14.925-.352-2.032-.188-5.279.353-7.358 1.151-4.39 4.323-8.665 8.154-11C82.668.926 85.088.203 88.05.063c3.29-.14 5.451.303 8.248 1.705 3.618 1.822 6.156 4.344 7.942 7.941 2.021 4.064 2.068 4.415 2.068 16 .024 10.16.024 10.16-3.901 10.23-3.947.047-3.947.047-3.994-2.686-.047-1.518-.047-3.2-.047-3.737 0-.56-.047-1.005-.118-1.005s-1.786 1.682-3.783 3.738c-4.089 4.204-3.619 3.994-7.496 3.48m11.444-13.57c-.094-4.999-.165-5.863-.611-7.194-1.34-4.041-4.418-6.517-8.413-6.727-2.467-.14-4.16.373-6.086 1.822-4.277 3.2-5.24 9.272-2.185 13.71.68.981 2.185 2.336 3.242 2.873 1.88.98 3.032 1.144 8.671 1.144 5.476.024 5.476.024 5.382-5.629m24.673 13.5c-.728-.164-1.739-.56-2.232-.911-1.222-.841-9.564-9.483-10.034-10.394-1.622-3.13-1.41-10.768.399-13.267.282-.42 2.515-2.803 4.935-5.302 5.452-5.65 5.311-5.557 10.762-5.72 4.254-.117 6.321.28 9.235 1.705 1.692.84 5.358 3.737 5.64 4.484.118.28-.517 1.075-2.491 3.037-1.457 1.471-2.89 2.71-3.195 2.803-.447.093-.799-.117-1.81-1.168-.705-.701-1.88-1.589-2.632-1.939-1.363-.677-1.363-.677-7.402-.747-6.063-.07-6.063-.07-6.063 9.763s0 9.833 6.063 9.763c5.992-.07 6.063-.07 7.379-.7.728-.328 1.833-1.099 2.42-1.682.705-.701 1.269-1.075 1.645-1.075.423 0 1.41.748 3.454 2.616 2.844 2.616 2.844 2.616.729 4.625-3.572 3.41-6.509 4.461-12.337 4.414-1.715 0-3.713-.14-4.465-.303m34.496-.14c-1.034-.257-2.185-.678-2.585-.935-.399-.233-2.702-2.429-5.122-4.835-4.935-4.928-5.123-5.232-5.734-8.829-.634-3.643-.047-7.077 1.81-10.697 1.034-2.032 2.044-3.34 4.065-5.232 1.997-1.892 4.065-3.13 6.932-4.134 1.88-.654 2.256-.7 5.546-.7 5.522-.024 5.169-.211 10.997 5.675 2.655 2.686 5.052 5.302 5.311 5.84.775 1.494 1.198 3.69 1.198 6.352 0 3.107-.54 5.396-2.021 8.339-1.927 3.9-6.227 7.59-10.433 8.969-2.256.724-7.402.817-9.964.187m7.637-8.573c2.703-1.33 4.442-3.76 4.935-6.89.117-.817.188-3.783.164-6.61-.07-5.138-.07-5.138-5.169-5.208-4.7-.047-5.194-.024-6.415.444-1.716.63-3.784 2.616-4.724 4.53-.681 1.402-.681 1.402-.752 8.012s-.07 6.61 5.17 6.54c5.264-.07 5.264-.07 6.791-.817" fill="#fff"/></svg>
+</file>
+
+<file path="src/app/globals.css">
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0b;
+  --color-fg: #ffffff;
+  --color-accent: #e8362b;
+
+  --font-sans: var(--font-urbanist), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-chelsea), cursive;
+  --font-ui: var(--font-outfit), system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif; /* 👈 nuevo */
+
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+  }
+
+  body {
+    min-height: 100dvh;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+/* Hero background vignette */
+.hero-vignette {
+  background:
+    radial-gradient(130% 90% at 38% 45%, transparent 45%, rgba(0, 0, 0, 0.55) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, transparent 25%, transparent 70%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+/* Lenis smooth scroll (recommended base styles) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+[data-line].is-active [data-line-inner] {
+  color: white;
+  font-weight: 700;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120,120,120,.35) transparent;
+}
+
+/* Chrome / Safari / Edge */
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(120,120,120,.30);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background .2s ease;
+}
+*::-webkit-scrollbar-thumb:hover { background: rgba(120,120,120,.55); }
+
+* { cursor: none; } /* ojo: reactivá cursor en inputs si querés (ver abajo) */
+input, textarea, [contenteditable] { cursor: auto; }
+
+.cursor-dot, .cursor-ring {
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 9999;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+.cursor-dot { width: 6px; height: 6px; background: #fff; }
+.cursor-ring {
+  width: 38px; height: 38px;
+  border: 1px solid rgba(255,255,255,.5);
+  transition: width .25s ease, height .25s ease, background .25s ease, border-color .25s ease;
+  mix-blend-mode: difference; /* se ve genial sobre cualquier fondo */
+}
+.cursor-ring.is-hover {
+  width: 64px; height: 64px;
+  background: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+</file>
+
+<file path="src/app/layout.tsx">
+import type { Metadata } from "next";
+import { Urbanist, Outfit, Chelsea_Market, Fraunces } from "next/font/google";
+import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
+import Loader from "@/components/Loader";
+
+const urbanist = Urbanist({
+  subsets: ["latin"],
+  variable: "--font-urbanist",
+  display: "swap",
+});
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+  axes: ["opsz"],
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
+const chelseaMarket = Chelsea_Market({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-chelsea",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "Joaco — AI Researcher & Full-Stack Developer",
+  description: "Think deeper. Build better.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html
+      lang="en"
+      className={`${urbanist.variable} ${outfit.variable} ${chelseaMarket.variable} ${fraunces.variable}`}
+    >
+      <body className="bg-bg text-fg font-sans antialiased">
+        <Loader />
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
+    </html>
+  );
+}
+</file>
+
+<file path="src/app/page.tsx">
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Ethos from "@/components/Ethos";
+import Works from "@/components/Works";
+import WorksShowCase from "@/components/WorksShowCase";
+import Gallery from "@/components/Gallery";
+
+export default function Home() {
+  return (
+    <>
+      <main className="relative min-h-[100dvh] overflow-hidden bg-black">
+        <div className="absolute inset-0 z-0" aria-hidden="true">
+          <Image
+            src="/hero.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[42%_center] sm:object-center"
+          />
+          <div className="hero-vignette absolute inset-0" />
+        </div>
+
+        <div className="relative z-10 flex min-h-[100dvh] flex-col gap-8 px-6 py-8 sm:px-12 lg:px-16">
+          <Navbar />
+          <Hero />
+        </div>
+      </main>
+      <Ethos />
+      <Works />
+      <WorksShowCase />
+      <Gallery />
+
+    </>
+  );
+}
+</file>
+
+<file path="src/components/Deeper.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+type Row = { text: string; dir: 1 | -1 };
+
+const ROWS: Row[] = [
+  { text: "DESIGN  CODE  RESEARCH  MOTION  ", dir: -1 },
+  { text: "THINK DEEPER  BUILD BETTER  ", dir: 1 },
+  { text: "AI  FULL-STACK  CREATIVE DEV  ", dir: -1 },
+];
+
+// Shared type styling (self-contained; no global CSS required).
+const LAYER =
+  "absolute inset-0 flex flex-col justify-center gap-2 sm:gap-4 select-none font-sans font-extrabold uppercase tracking-tight leading-[1.05] text-[clamp(2.5rem,9vw,7rem)]";
+const OUTLINE =
+  "text-transparent [-webkit-text-stroke:1.2px_rgba(255,255,255,0.18)]";
+const SPOTLIGHT_MASK =
+  "[-webkit-mask-image:radial-gradient(circle_180px_at_var(--mx,50%)_var(--my,50%),#000_0%,#000_34%,transparent_72%)] [mask-image:radial-gradient(circle_180px_at_var(--mx,50%)_var(--my,50%),#000_0%,#000_34%,transparent_72%)]";
+const GLOW =
+  "[background:radial-gradient(240px_circle_at_var(--mx,50%)_var(--my,50%),rgba(218, 173, 171, 0.22),transparent_62%)]";
+
+/**
+ * "DEEPER" — a purely visual interlude (Lite: GSAP + Lenis, no WebGL).
+ * - Kinetic marquee rows whose skewX reacts to scroll velocity.
+ * - A red spotlight follows the cursor and "lights up" the words in accent red
+ *   (a masked reveal layer over the outline base layer).
+ * - Respects prefers-reduced-motion (renders a static outline).
+ */
+export default function Deeper() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const baseRef = useRef<HTMLDivElement>(null);
+  const revealRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const base = baseRef.current;
+    const reveal = revealRef.current;
+    if (!section || !base || !reveal) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      const baseTracks = gsap.utils.toArray<HTMLElement>("[data-mtrack]", base);
+      const revealTracks = gsap.utils.toArray<HTMLElement>("[data-mtrack]", reveal);
+
+      // Seamless marquee: both layers move together per row (kept in sync).
+      ROWS.forEach((row, i) => {
+        const targets = [baseTracks[i], revealTracks[i]];
+        const from = row.dir === -1 ? 0 : -50;
+        const to = row.dir === -1 ? -50 : 0;
+        gsap.fromTo(
+          targets,
+          { xPercent: from },
+          { xPercent: to, duration: 22, ease: "none", repeat: -1 },
+        );
+      });
+
+      // Skew reactive to scroll velocity, easing back to 0 when idle.
+      const rows = gsap.utils.toArray<HTMLElement>("[data-mrow]");
+      const skewTo = gsap.quickTo(rows, "skewX", { duration: 0.5, ease: "power3" });
+      let idle: number | undefined;
+      ScrollTrigger.create({
+        trigger: section,
+        start: "top bottom",
+        end: "bottom top",
+        onUpdate: (self) => {
+          const skew = gsap.utils.clamp(-14, 14, self.getVelocity() / -280);
+          skewTo(skew);
+          if (idle) window.clearTimeout(idle);
+          idle = window.setTimeout(() => skewTo(0), 130);
+        },
+      });
+
+      // Red spotlight follows the cursor (updates CSS vars on the section).
+      const onMove = (e: PointerEvent) => {
+        const rect = section.getBoundingClientRect();
+        section.style.setProperty("--mx", `${e.clientX - rect.left}px`);
+        section.style.setProperty("--my", `${e.clientY - rect.top}px`);
+      };
+      section.addEventListener("pointermove", onMove);
+
+      return () => {
+        section.removeEventListener("pointermove", onMove);
+        if (idle) window.clearTimeout(idle);
+      };
+    }, section);
+
+    return () => ctx.revert();
+  }, []);
+
+  const renderRows = (variant: "base" | "reveal") =>
+    ROWS.map((row, i) => (
+      <div key={`${variant}-${i}`} data-mrow className="will-change-transform">
+        <div data-mtrack className="inline-flex w-max whitespace-nowrap">
+          <span>{row.text}</span>
+          <span aria-hidden="true">{row.text}</span>
+        </div>
+      </div>
+    ));
+
+  return (
+    <section
+      ref={sectionRef}
+      aria-label="Deeper"
+      className="relative min-h-[100dvh] overflow-hidden bg-bg"
+    >
+      <div ref={baseRef} aria-hidden="true" className={`${LAYER} ${OUTLINE}`}>
+        {renderRows("base")}
+      </div>
+      <div
+        ref={revealRef}
+        aria-hidden="true"
+        className={`${LAYER} ${SPOTLIGHT_MASK} pointer-events-none text-accent`}
+      >
+        {renderRows("reveal")}
+      </div>
+      <div
+        aria-hidden="true"
+        className={`${GLOW} pointer-events-none absolute inset-0 mix-blend-screen`}
+      />
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Ethos.tsx">
+import EthosWave from "./EthosWave";
+import EthosList from "./EthosList";
+
+/**
+ * ETHOS - "the way I think".
+ * Combines two scroll effects into one section:
+ *   1. Wave Bend intro (the problem: we build more, rarely more efficient).
+ *   2. Scroll List Index (the principles behind "efficient by design").
+ */
+export default function Ethos() {
+  return (
+    <section id="ethos" aria-label="Ethos">
+      <EthosWave />
+      <EthosList />
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/EthosList.tsx">
+// EthosList.tsx
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+type Principle = {
+    title: string;
+    media: string;
+    alt: string;
+};
+
+/**
+ * The manifesto: how I think, one line per principle.
+ * Each line has a matching thumbnail shown when it reaches the center.
+ * Images are sourced from Wikimedia Commons (public domain / CC, no API key).
+ */
+const PRINCIPLES: Principle[] = [
+    {
+        title: "Efficient by design",
+        media:
+            "/003.jpg",
+        alt: "A minimal 1970s computer terminal",
+    },
+    {
+        title: "Look back to move forward",
+        media:
+            "/004.jpg",
+        alt: "Stack of old books in a library",
+    },
+    {
+        title: "Low-software",
+        media:
+            "/005.jpg",
+        alt: "A small, sparse printed circuit board",
+    },
+    {
+        title: "Architecture over scale",
+        media:
+            "/006.jpg",
+        alt: "A brutalist concrete building",
+    },
+    {
+        title: "Beyond Transformers",
+        media:
+            "/002.jpg",
+        alt: "Dense macro photo of a circuit board",
+    },
+    {
+        title: "Do more with less",
+        media: "/007.jpg",
+        alt: "A minimalist photograph with negative space",
+    },
+];
+
+/**
+ * ETHOS - Scroll List Index (Lite: GSAP + ScrollTrigger, no paid plugins).
+ * - A vertical list of principles scrolls by. Each line drifts sideways as it
+ *   crosses the viewport and settles as it reaches the center.
+ * - A small thumbnail sits to the left of the list, pinned near the vertical
+ *   center of the viewport, and crossfades to the image tied to whichever
+ *   line is closest to center.
+ * - Respects prefers-reduced-motion (static list, first thumbnail shown).
+ */
+export default function EthosList() {
+    const sectionRef = useRef<HTMLElement>(null);
+    const listRef = useRef<HTMLUListElement>(null);
+    const mediaRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const section = sectionRef.current;
+        const list = listRef.current;
+        const mediaWrap = mediaRef.current;
+        if (!section || !list || !mediaWrap) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const ctx = gsap.context(() => {
+            const items = gsap.utils.toArray<HTMLElement>("[data-line]", list);
+            const inners = items.map((li) =>
+                li.querySelector<HTMLElement>("[data-line-inner]")!,
+            );
+            const medias = gsap.utils.toArray<HTMLElement>("[data-media]", mediaWrap);
+            const setX = inners.map((el) => gsap.quickSetter(el, "x", "px"));
+            const setOpacity = inners.map((el) => gsap.quickSetter(el, "opacity"));
+
+            let active = -1;
+
+            const onTick = () => {
+                const mid = window.innerHeight / 2;
+                let best = 0;
+                let bestDist = Infinity;
+                const dists: number[] = [];
+
+                items.forEach((li, i) => {
+                    const rect = li.getBoundingClientRect();
+                    const center = rect.top + rect.height / 2;
+                    const dist = Math.abs(center - mid);
+                    dists[i] = dist;
+                    if (dist < bestDist) {
+                        bestDist = dist;
+                        best = i;
+                    }
+                });
+
+                items.forEach((li, i) => {
+                    const isActive = i === best;
+                    setX[i](isActive ? 0 : gsap.utils.clamp(-40, 40, (dists[i] - bestDist) * 0.15));
+                    setOpacity[i](isActive ? 1 : 0.3);
+                    li.classList.toggle("is-active", isActive);
+                });
+
+                if (best !== active) {
+                    active = best;
+                    medias.forEach((m, i) => {
+                        gsap.to(m, {
+                            autoAlpha: i === active ? 1 : 0,
+                            duration: 0.5,
+                            ease: "power2.out",
+                        });
+                    });
+                }
+            };
+
+
+            gsap.ticker.add(onTick);
+            return () => gsap.ticker.remove(onTick);
+        }, section);
+
+        return () => ctx.revert();
+    }, []);
+
+    return (
+        <section
+            ref={sectionRef}
+            aria-label="Ethos - how I think"
+            className="relative bg-bg py-[12vh]"
+        >
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 sm:px-12 md:grid-cols-[11rem_1fr] md:gap-10 lg:grid-cols-[13rem_1fr] lg:px-16">
+                {/* Floating thumbnail */}
+                <div className="order-1 hidden md:block">
+                    <div className="sticky top-1/2 -translate-y-1/2">
+                        <div
+                            ref={mediaRef}
+                            className="relative aspect-[3/2] w-full max-w-[11rem] overflow-hidden rounded-xl shadow-xl shadow-black/40 ring-1 ring-white/10 lg:max-w-[13rem]"
+                        >
+                            {PRINCIPLES.map((p, i) => (
+                                <img
+                                    key={p.title}
+                                    data-media
+                                    src={p.media}
+                                    alt={p.alt}
+                                    loading="lazy"
+                                    className={`absolute inset-0 h-full w-full object-cover ${i === 0 ? "opacity-100" : "opacity-0"}`}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Principle list */}
+                <div className="order-2">
+                    <ul ref={listRef} className="m-0 list-none p-0">
+                        {PRINCIPLES.map((p, i) => (
+                            <li
+                                key={p.title}
+                                data-line
+                                className="border-t border-white/10 py-[6vh] first:border-t-0"
+                            >
+                                <span
+                                    data-line-inner
+                                    className="flex items-baseline gap-4 font-sans font-medium tracking-tight text-fg text-[clamp(2rem,5.5vw,3.75rem)] will-change-transform"
+                                >
+                                    {p.title}
+                                </span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+}
+</file>
+
+<file path="src/components/EthosWave.tsx">
+// EthosWave.tsx
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+type Segment =
+  | { type: "text"; text: string }
+  | { type: "media"; label: string; src: string; alt: string };
+
+/**
+ * Copy for the traveling line (the "problem" statement).
+ * Text hugs the line; media blocks sit between the words.
+ * Images are sourced from Wikimedia Commons (public domain / CC, no API key).
+ */
+const SEGMENTS: Segment[] = [
+  { type: "text", text: "We keep building more" },
+  {
+    type: "media",
+    label: "01",
+    src: "/002.jpg",
+    alt: "Dense macro photo of a circuit board",
+  },
+  { type: "text", text: "and more " },
+  {
+    type: "media",
+    label: "02",
+    src: "/001.jpg",
+    alt: "A minimal 1970s computer terminal",
+  },
+  { type: "text", text: "rarely more efficient." },
+];
+
+type WaveUnit =
+  | { kind: "char"; char: string; key: string }
+  | { kind: "media"; label: string; src: string; alt: string; key: string };
+
+function buildUnits(segments: Segment[]): WaveUnit[] {
+  const units: WaveUnit[] = [];
+  segments.forEach((seg, si) => {
+    if (seg.type === "text") {
+      Array.from(seg.text).forEach((ch, ci) => {
+        units.push({
+          kind: "char",
+          char: ch === " " ? "\u00A0" : ch,
+          key: `t${si}-${ci}`,
+        });
+      });
+    } else {
+      units.push({
+        kind: "media",
+        label: seg.label,
+        src: seg.src,
+        alt: seg.alt,
+        key: `m${si}`,
+      });
+    }
+  });
+  return units;
+}
+
+const UNITS = buildUnits(SEGMENTS);
+const FULL_TEXT = SEGMENTS.filter((s) => s.type === "text")
+  .map((s) => (s as Extract<Segment, { type: "text" }>).text)
+  .join(" ");
+
+/**
+ * ETHOS · Wave Bend (Lite: GSAP + ScrollTrigger, no paid plugins).
+ * - A single horizontal line of characters + media travels across a pinned
+ *   viewport while you scroll (scrubbed).
+ * - Every letter (not just each word/media block) gets its own vertical sine
+ *   offset, so faster scrolling bends the line into one smooth continuous
+ *   arc instead of a jagged, segment-by-segment wobble.
+ * - Amplitude tracks scroll velocity, then eases back to a flat line when idle.
+ * - Respects prefers-reduced-motion (renders a static, flat line).
+ */
+export default function EthosWave() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const track = trackRef.current;
+    if (!section || !track) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      const units = gsap.utils.toArray<HTMLElement>("[data-wave-unit]", track);
+      const setY = units.map((el) => gsap.quickSetter(el, "y", "px"));
+      const setRot = units.map((el) => gsap.quickSetter(el, "rotation", "deg"));
+
+      // Eased amplitude of the wave (0 = flat line).
+      const wave = { amp: 0 };
+      const width = () => Math.max(track.scrollWidth, 1);
+      let idle: number | undefined;
+
+      // Travel the line from off-screen right to off-screen left.
+      gsap.fromTo(
+        track,
+        { x: () => window.innerWidth },
+        {
+          x: () => -width(),
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: "top top",
+            end: () => "+=" + (width() + window.innerHeight),
+            pin: true,
+            scrub: 1,
+            invalidateOnRefresh: true,
+            onUpdate: (self) => {
+              const target = gsap.utils.clamp(
+                0,
+                120,
+                Math.abs(self.getVelocity()) / 55,
+              );
+              gsap.to(wave, {
+                amp: target,
+                duration: 0.3,
+                ease: "power2.out",
+                overwrite: true,
+              });
+              if (idle) window.clearTimeout(idle);
+                idle = window.setTimeout(() => {
+                gsap.to(wave, { amp: 0, duration: 1, ease: "power2.out" });
+                }, 120);
+            },
+          },
+        },
+      );
+
+      // Per-frame: bend every letter/media block along one continuous sine
+      // curve based on its x position. A large phase divisor keeps the curve
+      // smooth across the whole line instead of producing many small waves.
+      const onTick = () => {
+        units.forEach((unit, i) => {
+          const rect = unit.getBoundingClientRect();
+          const cx = rect.left + rect.width / 2;
+          const phase = cx / 340;
+          setY[i](wave.amp * Math.sin(phase));
+          setRot[i](wave.amp * 0.06 * Math.cos(phase));
+        });
+      };
+      gsap.ticker.add(onTick);
+
+      return () => {
+        gsap.ticker.remove(onTick);
+        if (idle) window.clearTimeout(idle);
+      };
+    }, section);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      aria-label="Ethos - the problem"
+      className="relative min-h-[100dvh] overflow-x-clip overflow-y-hidden bg-bg"
+    >
+      <span className="sr-only">{FULL_TEXT}</span>
+      <div className="absolute inset-0 flex items-center" aria-hidden="true">
+        <div
+          ref={trackRef}
+          className="flex w-max items-center whitespace-nowrap will-change-transform"
+        >
+          {UNITS.map((unit) =>
+            unit.kind === "char" ? (
+              <span
+                key={unit.key}
+                data-wave-unit
+                className="inline-block font-sans font-semibold tracking-tight text-fg text-[clamp(2.5rem,9vw,7rem)] will-change-transform"
+              >
+                {unit.char}
+              </span>
+            ) : (
+              <span
+                key={unit.key}
+                data-wave-unit
+                className="mx-4 inline-block align-middle will-change-transform sm:mx-7"
+              >
+                <span className="relative grid h-[clamp(3rem,8vw,6rem)] w-[clamp(3rem,8vw,6rem)] place-items-end overflow-hidden rounded-2xl bg-white/5">
+                  <img
+                    src={unit.src}
+                    alt={unit.alt}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <span className="relative m-2 rounded-full bg-black/50 px-2 py-0.5 font-ui text-xs text-white/80">
+                    {unit.label}
+                  </span>
+                </span>
+              </span>
+            ),
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Gallery.tsx">
+// src/components/Gallery.tsx
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { InertiaPlugin } from "gsap/InertiaPlugin";
+
+const TOTAL = 35;
+const IMAGES = Array.from(
+  { length: TOTAL },
+  (_, i) => `/${String(i + 1).padStart(3, "0")}.jpg`,
+);
+
+// 4 bandas de profundidad: escala (tamaño), velocidad de drift y desenfoque
+const LANES = [
+  { scale: 0.55, speed: 0.5, blur: 2.5, z: 1 },
+  { scale: 0.75, speed: 0.72, blur: 1.2, z: 2 },
+  { scale: 1.0, speed: 1.0, blur: 0, z: 3 },
+  { scale: 1.3, speed: 1.35, blur: 0, z: 4 },
+];
+
+export default function Gallery() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const pinRef = useRef<HTMLDivElement>(null);
+  const laneRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const pin = pinRef.current;
+    if (!section || !pin) return;
+
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+    gsap.registerPlugin(ScrollTrigger, InertiaPlugin);
+
+    const ctx = gsap.context(() => {
+      const lanes = laneRefs.current.filter((el): el is HTMLDivElement => !!el);
+
+      // ---- Efecto 083: drift multi-carril con pin + scrub ----
+      if (!reduce) {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: "top top",
+            end: () => "+=" + window.innerHeight * 3.2, // largo del recorrido
+            pin,
+            scrub: 1,
+            invalidateOnRefresh: true,
+          },
+        });
+
+        // Cada carril tiene distinto ancho => se traslada distinto => distinta velocidad
+        lanes.forEach((lane) => {
+          tl.fromTo(
+            lane,
+            { x: 0 },
+            { x: () => -(lane.offsetWidth - window.innerWidth), ease: "none" },
+            0, // todos arrancan a la vez
+          );
+        });
+      }
+
+      // ---- Efecto 000: inercia al hover ----
+      if (fine) {
+        let oldX = 0, oldY = 0, dx = 0, dy = 0;
+        const onMove = (e: MouseEvent) => {
+          dx = e.clientX - oldX;
+          dy = e.clientY - oldY;
+          oldX = e.clientX;
+          oldY = e.clientY;
+        };
+        section.addEventListener("mousemove", onMove);
+
+        const medias = gsap.utils.toArray<HTMLElement>(".media", section);
+        const offs: Array<() => void> = [];
+        medias.forEach((el) => {
+          const onEnter = () => {
+            const power = Number(el.dataset.power) || 30;   // 👈 inercia según profundidad
+            el.style.zIndex = "50";
+            const tl = gsap.timeline({ onComplete: () => { tl.kill(); el.style.zIndex = ""; } });
+            tl.timeScale(1.2);
+            tl.to(el, {
+              inertia: {
+                x: { velocity: dx * power, end: 0 },
+                y: { velocity: dy * power, end: 0 },
+              },
+            });
+            tl.fromTo(el, { rotate: 0 }, {
+              duration: 0.4,
+              rotate: (Math.random() - 0.5) * (power * 0.7), // atrás rota menos
+              yoyo: true, repeat: 1, ease: "power1.inOut",
+            }, "<");
+          };
+          el.addEventListener("mouseenter", onEnter);
+          offs.push(() => el.removeEventListener("mouseenter", onEnter));
+        });
+
+        return () => {
+          section.removeEventListener("mousemove", onMove);
+          offs.forEach((off) => off());
+        };
+      }
+    }, section);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      aria-label="Galería"
+      className="relative overflow-x-clip bg-bg"
+    >
+      <div ref={pinRef} className="relative h-[100dvh] w-full overflow-hidden">
+
+        {LANES.map((lane, li) => {
+          // reparte las imágenes entre carriles (round-robin)
+          const items = IMAGES.filter((_, idx) => idx % LANES.length === li);
+          // carril más rápido => más ancho => se traslada más
+          const laneWidthVw = 130 + lane.speed * 150;
+
+          return (
+            <div key={li} className="absolute inset-0" style={{ zIndex: lane.z }}>
+              <div
+                ref={(el) => { laneRefs.current[li] = el; }}
+                className="relative h-full will-change-transform"
+                style={{ width: `${laneWidthVw}vw` }}
+              >
+                {items.map((src, k) => {
+                  // posición pseudo-aleatoria PERO estable (evita mismatch de hidratación)
+                  const seed = (li * 97 + k * 131) % 100;
+                  const top = 5 + ((seed * 7) % 74);
+                  const left = (k / items.length) * (laneWidthVw - 28) + (seed % 10);
+                  const w = 11 * lane.scale + (seed % 4);
+                  return (
+                    <div
+                      key={src}
+                      className="media absolute overflow-hidden rounded-xl shadow-2xl shadow-black/40 ring-1 ring-white/10"
+                      data-power={Math.round(lane.scale * 30)}
+                      style={{
+                        top: `${top}%`,
+                        left: `${left}vw`,
+                        width: `${w}vw`,
+                        aspectRatio: "4 / 5",
+                        filter: lane.blur ? `blur(${lane.blur}px)` : undefined,
+                      }}
+                    >
+                      <img
+                        src={src}
+                        alt=""
+                        loading="lazy"
+                        draggable={false}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Hero.tsx">
+const pillClass =
+  "rounded-full border border-white/15 bg-white/[0.02] px-5 py-[9px] font-ui text-sm text-fg no-underline backdrop-blur transition-colors duration-200 hover:border-white hover:bg-white hover:text-black";
+
+export default function Hero() {
+  return (
+    <>
+      <section className="flex flex-1 items-center justify-end text-right max-sm:items-end max-sm:justify-start max-sm:pb-8 max-sm:text-left">
+        <h1 className="m-0 font-sans font-semibold leading-[1.02] tracking-[-0.02em] text-[clamp(2.5rem,6.5vw,5rem)] max-sm:text-[clamp(2.25rem,12vw,3.25rem)]">
+          Think <span className="font-display font-normal tracking-normal">deeper.</span>
+          <br />
+          Build better.
+        </h1>
+      </section>
+
+      <section
+        aria-label="Introduction"
+        className="flex flex-col items-start gap-6"
+      >
+        <p className="m-0 font-sans font-medium leading-[1.2] text-[clamp(1.2rem,2.4vw,1.75rem)]">
+          AI Researcher &amp;
+          <br />
+          Full-Stack Developer
+        </p>
+        <div className="flex gap-3">
+          <a href="#contact" className={pillClass}>
+            Contact
+          </a>
+          <a href="#works" className={pillClass}>
+            Works
+          </a>
+        </div>
+      </section>
+    </>
+  );
+}
+</file>
+
+<file path="src/components/Loader.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { CustomEase } from "gsap/CustomEase";
+import Logo from "./Logo";
+
+const ROWS = [0, 1, 2];
+
+/**
+ * Loading overlay:
+ * - Three stacked JOACO rows doing a stepped horizontal "roll" (bezier eased),
+ *   each row progressively staggered, looping until the page is ready.
+ * - On reveal: side rows fade out, the middle row snaps to a centered logo and
+ *   zooms into the "A" (transform-origin ~47% 50%) while the overlay dissolves.
+ * - Locks scrolling while active and respects prefers-reduced-motion.
+ */
+export default function Loader() {
+  const overlayRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const overlay = overlayRef.current;
+    if (!overlay) return;
+
+    const html = document.documentElement;
+    const prevOverflow = html.style.overflow;
+    html.style.overflow = "hidden";
+
+    const finish = () => {
+      html.style.overflow = prevOverflow;
+      overlay.style.display = "none";
+      window.dispatchEvent(new Event("loader:done"));
+    };
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      finish();
+      return;
+    }
+
+    gsap.registerPlugin(CustomEase);
+    // Hand-tuned beziers (x1, y1, x2, y2):
+    const rollEase = CustomEase.create("loaderRoll", "0.85, 0, 0.15, 1"); // crisp stepped roll
+    const zoomEase = CustomEase.create("loaderZoom", "0.7, 0, 0.84, 0"); // accelerate INTO the "A"
+    const fadeEase = CustomEase.create("loaderFade", "0.33, 1, 0.68, 1"); // smooth settle
+
+    const ctx = gsap.context(() => {
+      const rows = gsap.utils.toArray<HTMLElement>("[data-row]");
+      const tracks = gsap.utils.toArray<HTMLElement>("[data-track]");
+
+      // Stepped horizontal roll: each row rolls one logo, holds, loops.
+      // Per-row delay = progressive; the bezier gives it the detail.
+      const loops = tracks.map((track, i) =>
+        gsap.fromTo(
+          track,
+          { xPercent: 0 },
+          {
+            xPercent: -50,
+            duration: 0.7,
+            ease: rollEase,
+            repeat: -1,
+            repeatDelay: 0.45,
+            delay: i * 0.2,
+          },
+        ),
+      );
+
+      let revealed = false;
+      const reveal = () => {
+        if (revealed) return;
+        revealed = true;
+
+        const mid = rows[1];
+        const midTrack = tracks[1];
+        const sides = [rows[0], rows[2]];
+
+        // Snap the middle row to the nearest whole logo to keep the "A" aligned.
+        const current = (gsap.getProperty(midTrack, "xPercent") as number) ?? 0;
+        const snap = current < -25 ? -50 : 0;
+        loops.forEach((l) => l.kill());
+
+        const tl = gsap.timeline({ onComplete: finish });
+        tl.to(sides, { autoAlpha: 0, duration: 0.4, ease: fadeEase }, 0)
+          .to(midTrack, { xPercent: snap, duration: 0.5, ease: rollEase }, 0)
+          .to(
+            mid,
+            {
+              scale: 9,
+              transformOrigin: "47% 50%",
+              duration: 1.1,
+              ease: zoomEase,
+            },
+            ">-0.05",
+          )
+          .to(overlay, { autoAlpha: 0, duration: 0.6, ease: fadeEase }, "<0.45");
+      };
+
+      const ready = new Promise<void>((res) => {
+        if (document.readyState === "complete") res();
+        else window.addEventListener("load", () => res(), { once: true });
+      });
+      const minTime = new Promise<void>((res) => window.setTimeout(res, 2200));
+      Promise.all([ready, minTime]).then(reveal);
+    }, overlay);
+
+    return () => {
+      ctx.revert();
+      html.style.overflow = prevOverflow;
+    };
+  }, []);
+
+  return (
+    <div
+      ref={overlayRef}
+      className="fixed inset-0 z-[100] grid place-items-center bg-bg"
+      aria-hidden="true"
+    >
+      <div className="flex flex-col items-center gap-2 sm:gap-3">
+        {ROWS.map((row) => (
+          <div
+            key={row}
+            data-row
+            className="w-[min(70vw,520px)] overflow-hidden"
+          >
+            <div data-track className="flex w-max">
+              <div className="w-[min(70vw,520px)] shrink-0">
+                <Logo className="h-auto w-full text-fg" />
+              </div>
+              <div className="w-[min(70vw,520px)] shrink-0">
+                <Logo className="h-auto w-full text-fg" />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Logo.tsx">
+type LogoProps = {
+  className?: string;
+};
+
+export default function Logo({ className }: LogoProps) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 180 36"
+      fill="none"
+      role="img"
+      aria-label="Joaco"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 35.776c0-.28 1.222-2.405 2.984-5.208s1.575-2.756 10.81-2.756c7.12 0 7.12 0 7.167-13.828.07-13.85.07-13.85 3.83-13.92 6.157-.094 5.616-1.215 5.452 11.515-.094 5.909-.259 11.118-.4 11.561a6.8 6.8 0 0 1-.658 1.519c-.634 1.027-8.953 9.646-9.799 10.16-1.668 1.028-3.055 1.168-11.443 1.168-4.841 0-7.943-.094-7.943-.21m46.175-.163c-.752-.187-1.81-.584-2.35-.911-1.058-.63-8.389-8.128-9.352-9.576-1.387-2.08-1.81-7.591-.87-11.235C35.272 7.444 40.277 2.166 46.41.461c1.786-.49 7.355-.444 9.165.093 1.339.397 1.597.607 5.357 4.438 6.462 6.54 6.697 6.914 7.19 10.861.682 5.349-1.221 10.697-5.24 14.668-2.208 2.15-4.511 3.597-7.425 4.625-1.762.607-2.35.7-4.935.77-1.997.024-3.383-.046-4.347-.303m9-8.595c1.434-.794 2.844-2.243 3.548-3.62 1.034-1.986 1.199-3.294 1.199-9.437 0-5.792 0-5.792-5.57-5.722-5.498.07-5.615.07-6.931.7-1.81.841-3.572 2.616-4.489 4.578-.752 1.565-.752 1.565-.822 7.942-.07 6.376-.07 6.376 5.874 6.306 5.946-.07 5.946-.07 7.191-.748M86.97 35.73c-7.825-1.005-13.982-7.007-15.298-14.925-.352-2.032-.188-5.279.353-7.358 1.151-4.39 4.323-8.665 8.154-11C82.668.926 85.088.203 88.05.063c3.29-.14 5.451.303 8.248 1.705 3.618 1.822 6.156 4.344 7.942 7.941 2.021 4.064 2.068 4.415 2.068 16 .024 10.16.024 10.16-3.901 10.23-3.947.047-3.947.047-3.994-2.686-.047-1.518-.047-3.2-.047-3.737 0-.56-.047-1.005-.118-1.005s-1.786 1.682-3.783 3.738c-4.089 4.204-3.619 3.994-7.496 3.48m11.444-13.57c-.094-4.999-.165-5.863-.611-7.194-1.34-4.041-4.418-6.517-8.413-6.727-2.467-.14-4.16.373-6.086 1.822-4.277 3.2-5.24 9.272-2.185 13.71.68.981 2.185 2.336 3.242 2.873 1.88.98 3.032 1.144 8.671 1.144 5.476.024 5.476.024 5.382-5.629m24.673 13.5c-.728-.164-1.739-.56-2.232-.911-1.222-.841-9.564-9.483-10.034-10.394-1.622-3.13-1.41-10.768.399-13.267.282-.42 2.515-2.803 4.935-5.302 5.452-5.65 5.311-5.557 10.762-5.72 4.254-.117 6.321.28 9.235 1.705 1.692.84 5.358 3.737 5.64 4.484.118.28-.517 1.075-2.491 3.037-1.457 1.471-2.89 2.71-3.195 2.803-.447.093-.799-.117-1.81-1.168-.705-.701-1.88-1.589-2.632-1.939-1.363-.677-1.363-.677-7.402-.747-6.063-.07-6.063-.07-6.063 9.763s0 9.833 6.063 9.763c5.992-.07 6.063-.07 7.379-.7.728-.328 1.833-1.099 2.42-1.682.705-.701 1.269-1.075 1.645-1.075.423 0 1.41.748 3.454 2.616 2.844 2.616 2.844 2.616.729 4.625-3.572 3.41-6.509 4.461-12.337 4.414-1.715 0-3.713-.14-4.465-.303m34.496-.14c-1.034-.257-2.185-.678-2.585-.935-.399-.233-2.702-2.429-5.122-4.835-4.935-4.928-5.123-5.232-5.734-8.829-.634-3.643-.047-7.077 1.81-10.697 1.034-2.032 2.044-3.34 4.065-5.232 1.997-1.892 4.065-3.13 6.932-4.134 1.88-.654 2.256-.7 5.546-.7 5.522-.024 5.169-.211 10.997 5.675 2.655 2.686 5.052 5.302 5.311 5.84.775 1.494 1.198 3.69 1.198 6.352 0 3.107-.54 5.396-2.021 8.339-1.927 3.9-6.227 7.59-10.433 8.969-2.256.724-7.402.817-9.964.187m7.637-8.573c2.703-1.33 4.442-3.76 4.935-6.89.117-.817.188-3.783.164-6.61-.07-5.138-.07-5.138-5.169-5.208-4.7-.047-5.194-.024-6.415.444-1.716.63-3.784 2.616-4.724 4.53-.681 1.402-.681 1.402-.752 8.012s-.07 6.61 5.17 6.54c5.264-.07 5.264-.07 6.791-.817"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+</file>
+
+<file path="src/components/Navbar.tsx">
+import Logo from "./Logo";
+import RollLink from "./RollLink";
+
+const LINKS = [
+  { href: "#education", label: "Education" },
+  { href: "#works", label: "Works" },
+  { href: "#contact", label: "Contact" },
+];
+
+export default function Navbar() {
+  return (
+    <header className="flex items-center justify-between gap-6">
+      <a href="#" aria-label="Joaco — Home" className="inline-flex text-fg">
+        <Logo className="h-[22px] w-auto" />
+      </a>
+      <nav
+        aria-label="Primary"
+        className="flex items-center gap-5 sm:gap-10 lg:gap-14"
+      >
+        {LINKS.map((link) => (
+          <RollLink key={link.href} href={link.href} label={link.label} />
+        ))}
+      </nav>
+    </header>
+  );
+}
+</file>
+
+<file path="src/components/OrbitalGallery.tsx">
+// src/components/OrbitGallery.tsx
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { InertiaPlugin } from "gsap/InertiaPlugin";
+import src from "gsap-trial/src/index";
+
+const TOTAL = 35;
+const IMAGES = Array.from(
+  { length: TOTAL },
+  (_, i) => `/${String(i + 1).padStart(3, "0")}.jpg`,
+);
+const TURNS = 2; // vueltas totales a lo largo del pin
+
+export default function OrbitGallery() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const itemRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const stage = stageRef.current;
+    if (!section || !stage) return;
+
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+    gsap.registerPlugin(ScrollTrigger, InertiaPlugin);
+
+    const items = itemRefs.current.filter((el): el is HTMLDivElement => !!el);
+    const N = items.length;
+    const depths = new Array(N).fill(0.5);
+    const step = (Math.PI * 2) / N;
+    const interp = gsap.utils.interpolate;
+
+    const ctx = gsap.context(() => {
+      let cx = 0, cy = 0, minR = 0;
+      const measure = () => {
+        const r = stage.getBoundingClientRect();
+        cx = r.width / 2;
+        cy = r.height / 2;
+        minR = Math.min(r.width, r.height);
+      };
+      measure();
+
+      let targetProg = 0;   // progreso de scroll (0..1)
+      let smoothProg = 0;   // suavizado
+      let flatten = 0;      // 0 = órbita 3D · 1 = órbita 2D plana
+      const state = { boost: 0 };
+
+      const render = () => {
+        smoothProg += (targetProg - smoothProg) * 0.08;
+        state.boost += (0 - state.boost) * 0.05;
+
+        const rotation = smoothProg * TURNS * Math.PI * 2;
+        // luego de orbitar un poco (35%) transiciona a 2D (listo al 75%)
+        flatten = gsap.utils.clamp(0, 1, (smoothProg - 0.35) / 0.4);
+
+        const Rbase = minR * 0.34 * (1 + state.boost * 0.28); // velocidad => alejarse
+        const Rx = Rbase;
+        const Ry = Rbase * interp(0.5, 1, flatten); // elipse (3D) -> círculo (2D)
+
+        for (let i = 0; i < N; i++) {
+          const a = rotation + i * step;
+          const d = (Math.sin(a) + 1) / 2; // 0 atrás · 1 frente
+          depths[i] = d;
+
+          const x = cx + Math.cos(a) * Rx;
+          const y = cy + Math.sin(a) * Ry;
+          const scale = interp(0.45 + d * 0.85, 0.92, flatten);   // uniforme en 2D
+          const opacity = interp(0.35 + d * 0.65, 1, flatten);
+
+          const item = items[i];
+          item.style.transform =
+            `translate(-50%,-50%) translate(${x}px, ${y}px) scale(${scale})`;
+          item.style.opacity = String(opacity);
+          item.style.zIndex = String(Math.round(d * 100 * (1 - flatten) + 40 * flatten));
+
+          const card = item.firstElementChild as HTMLElement | null;
+          if (card) {
+            const blur = (1 - d) * 4 * (1 - flatten); // sin blur en 2D
+            card.style.filter = blur > 0.15 ? `blur(${blur.toFixed(2)}px)` : "";
+          }
+        }
+      };
+
+      if (reduce) {
+        render(); // órbita estática
+      } else {
+        gsap.ticker.add(render);
+
+        ScrollTrigger.create({
+          trigger: section,
+          start: "top top",
+          end: "+=260%",          // 👈 duración del pin
+          pin: stage,
+          pinSpacing: true,
+          invalidateOnRefresh: true,
+          onRefresh: measure,
+          onUpdate: (self) => {
+            targetProg = self.progress;                              // rotación general
+            const v = self.getVelocity();
+            state.boost = gsap.utils.clamp(0, 1, Math.abs(v) / 1800); // alejarse del centro
+          },
+        });
+      }
+
+      // Inercia al hover (suave atrás; en 2D todas responden pleno)
+      let offHover: (() => void) | undefined;
+      if (fine && !reduce) {
+        let oldX = 0, oldY = 0, dx = 0, dy = 0;
+        const onMove = (e: MouseEvent) => {
+          dx = e.clientX - oldX; dy = e.clientY - oldY;
+          oldX = e.clientX; oldY = e.clientY;
+        };
+        section.addEventListener("mousemove", onMove);
+
+        const offs: Array<() => void> = [];
+        items.forEach((item, i) => {
+          const card = item.firstElementChild as HTMLElement | null;
+          if (!card) return;
+          const onEnter = () => {
+            const eff = interp(depths[i], 1, flatten); // en 2D todas al frente
+            const power = 12 + eff * 30;                // atrás suave · frente fuerte
+            const tl = gsap.timeline({ onComplete: () => tl.kill() });
+            tl.timeScale(1.2);
+            tl.to(card, {
+              inertia: {
+                x: { velocity: dx * power, end: 0 },
+                y: { velocity: dy * power, end: 0 },
+              },
+            });
+            tl.fromTo(card, { rotate: 0 }, {
+              duration: 0.4,
+              rotate: (Math.random() - 0.5) * (10 + eff * 20),
+              yoyo: true, repeat: 1, ease: "power1.inOut",
+            }, "<");
+          };
+          item.addEventListener("mouseenter", onEnter);
+          offs.push(() => item.removeEventListener("mouseenter", onEnter));
+        });
+        offHover = () => {
+          section.removeEventListener("mousemove", onMove);
+          offs.forEach((off) => off());
+        };
+      }
+
+      const onResize = () => measure();
+      window.addEventListener("resize", onResize);
+
+      return () => {
+        gsap.ticker.remove(render);
+        window.removeEventListener("resize", onResize);
+        offHover?.();
+      };
+    }, section);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      aria-label="Showcase orbital"
+      className="relative overflow-x-clip bg-bg"
+    >
+      <div ref={stageRef} className="relative h-[100dvh] w-full overflow-hidden">
+        <p className="pointer-events-none absolute left-1/2 top-1/2 z-[200] flex -translate-x-1/2 -translate-y-1/2 items-baseline gap-3 whitespace-nowrap font-sans font-semibold tracking-tight text-fg text-[clamp(2rem,5vw,3.5rem)]">
+          Showcase <span className="text-fg/50">{TOTAL}</span>
+        </p>
+
+        {IMAGES.map((src, i) => (
+          <div
+            key={src}
+            ref={(el) => { itemRefs.current[i] = el; }}
+            className="orbit-item absolute left-0 top-0 will-change-transform"
+          >
+            <div className="media overflow-hidden rounded-2xl shadow-2xl shadow-black/50 ring-1 ring-white/10 will-change-transform">
+              <img
+                src={src}
+                alt=""
+                loading="lazy"
+                draggable={false}
+                className="block h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/RollLink.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { CustomEase } from "gsap/CustomEase";
+
+type RollLinkProps = {
+  href: string;
+  label: string;
+};
+
+/**
+ * Navlink with a word-progressive "roll" effect.
+ * - The incoming copy falls in from the TOP.
+ * - Letters animate with a stagger, so the roll travels across the word.
+ * - Settles on a hand-tuned cubic-bezier (CustomEase) with a subtle overshoot.
+ * - Color never changes: both stacked copies share the same color.
+ * - Respects prefers-reduced-motion.
+ */
+export default function RollLink({ href, label }: RollLinkProps) {
+  const rootRef = useRef<HTMLAnchorElement>(null);
+  const tlRef = useRef<gsap.core.Timeline | null>(null);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    // Register + build the ease on the client (SSR-safe).
+    gsap.registerPlugin(CustomEase);
+    // (x1, y1, x2, y2) — tweak y1 to dial the overshoot amount.
+    const rollEase = CustomEase.create("rollBezier", "0.22, 1.15, 0.32, 1");
+
+    const ctx = gsap.context(() => {
+      const inners = gsap.utils.toArray<HTMLElement>("[data-roll]");
+      // Start with the bottom copy showing (inner is two letters tall).
+      gsap.set(inners, { yPercent: -50 });
+      tlRef.current = gsap.timeline({ paused: true }).to(inners, {
+        yPercent: 0,
+        duration: 0.6,
+        ease: rollEase,
+        stagger: 0.04,
+      });
+    }, root);
+
+    return () => ctx.revert();
+  }, []);
+
+  const play = () => tlRef.current?.play();
+  const reverse = () => tlRef.current?.reverse();
+
+  const chars = Array.from(label);
+
+  return (
+    <a
+      ref={rootRef}
+      href={href}
+      aria-label={label}
+      onMouseEnter={play}
+      onMouseLeave={reverse}
+      onFocus={play}
+      onBlur={reverse}
+      className="relative inline-flex font-ui text-base tracking-wide text-fg no-underline"
+    >
+      {chars.map((ch, i) => {
+        const glyph = ch === " " ? "\u00A0" : ch;
+        return (
+          <span
+            key={`${ch}-${i}`}
+            aria-hidden="true"
+            className="relative inline-block h-[1.35em] overflow-hidden leading-[1.35em]"
+          >
+            <span data-roll className="block will-change-transform">
+              <span className="block h-[1.35em]">{glyph}</span>
+              <span className="block h-[1.35em]">{glyph}</span>
+            </span>
+          </span>
+        );
+      })}
+    </a>
+  );
+}
+</file>
+
+<file path="src/components/SmoothScroll.tsx">
+"use client";
+
+import { useEffect } from "react";
+import Lenis from "lenis";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+type SmoothScrollProps = {
+  children: React.ReactNode;
+};
+
+export default function SmoothScroll({ children }: SmoothScrollProps) {
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const lenis = new Lenis({ lerp: 0.1, smoothWheel: true });
+    lenis.on("scroll", ScrollTrigger.update);
+
+    const raf = (time: number) => {
+      lenis.raf(time * 1000);
+    };
+
+    gsap.ticker.add(raf);
+    gsap.ticker.lagSmoothing(0);
+
+    return () => {
+      lenis.off("scroll", ScrollTrigger.update);
+      gsap.ticker.remove(raf);
+      lenis.destroy();
+    };
+  }, []);
+
+  return <>{children}</>;
+}
+</file>
+
+<file path="src/components/Works.tsx">
+// src/components/Works.tsx
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+type ProjectThumb = {
+  title: string;
+  src: string;
+  alt: string;
+};
+
+const WORD = "WORKS";
+
+const PROJECTS: ProjectThumb[] = [
+  { title: "Agroecología", src: "/001.jpg", alt: "Vista previa de Agroecología" },
+  { title: "Proyecto 2", src: "/002.jpg", alt: "Vista previa del proyecto 2" },
+  { title: "Proyecto 3", src: "/003.jpg", alt: "Vista previa del proyecto 3" },
+  { title: "Proyecto 4", src: "/004.jpg", alt: "Vista previa del proyecto 4" },
+  { title: "Proyecto 5", src: "/005.jpg", alt: "Vista previa del proyecto 5" },
+];
+
+const INTRO_PHRASES = ["Here I present to you", "some of my best"];
+const FULL_TEXT = [...INTRO_PHRASES, "Works"].join(" ");
+
+/**
+ * WORKS — reveal + pinned letter-to-image scatter + explosión + reforma
+ * (Lite: GSAP + ScrollTrigger, sin plugins pagos).
+ * 1. Frases en rotación que terminan asentándose en "WORKS" (reveal simple).
+ * 2. Pin: cada letra se apaga y una miniatura aparece en un offset aleatorio,
+ *    en orden random. Cada miniatura nueva queda por encima de las
+ *    anteriores (z-index por orden de aparición, sin conflictos).
+ * 3. "Explosión" suave: las miniaturas se alejan un poco más, sin golpes.
+ * 4. Vuelven a su lugar y "WORKS" se reforma; al terminar el timeline el pin
+ *    se libera y el scroll sigue normal.
+ * Respeta prefers-reduced-motion (muestra "WORKS" estático, sin pin).
+ */
+export default function Works() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const phraseRefs = useRef<Array<HTMLSpanElement | null>>([]);
+  const wordRef = useRef<HTMLDivElement>(null);
+  const letterRefs = useRef<Array<HTMLSpanElement | null>>([]);
+  const mediaRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const word = wordRef.current;
+    if (!section || !word) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      const phrases = phraseRefs.current.filter(
+        (el): el is HTMLSpanElement => el !== null,
+      );
+      const letters = letterRefs.current.filter(
+        (el): el is HTMLSpanElement => el !== null,
+      );
+      const media = mediaRefs.current.filter(
+        (el): el is HTMLDivElement => el !== null,
+      );
+
+      gsap.set(phrases, { autoAlpha: 0, y: 24 });
+      gsap.set(word, { autoAlpha: 0 });
+      gsap.set(media, { autoAlpha: 0, scale: 0.4 });
+
+      // Punto de dispersión de cada miniatura. Rotación más angosta para que
+      // no termine visualmente lejos de la letra donde apareció.
+      const scatter = media.map(() => ({
+        x: gsap.utils.random(-70, 70),
+        y: gsap.utils.random(-60, 60),
+        rotate: gsap.utils.random(-10, 10),
+      }));
+      media.forEach((el, i) => gsap.set(el, scatter[i]));
+
+      // Orden aleatorio de aparición; cada miniatura nueva queda arriba de
+      // las anteriores, así nunca hay conflictos de z-index.
+      const appearOrder = gsap.utils.shuffle(media.map((_, i) => i));
+      appearOrder.forEach((i, rank) => gsap.set(media[i], { zIndex: rank + 1 }));
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: "+=340%",
+          pin: true,
+          scrub: 1,
+        },
+      });
+
+      // Fase 1 — frases en rotación, reveal simple.
+      phrases.forEach((phrase) => {
+        tl.to(phrase, { autoAlpha: 1, y: 0, duration: 0.5 }).to(
+          phrase,
+          { autoAlpha: 0, y: -24, duration: 0.4 },
+          "+=0.3",
+        );
+      });
+      tl.to(word, { autoAlpha: 1, duration: 0.5 });
+
+      // Fase 2 — cada letra se convierte en una miniatura, orden aleatorio.
+      appearOrder.forEach((i) => {
+        tl.to(
+          letters[i],
+          { autoAlpha: 0, scale: 0.6, duration: 0.4 },
+          "+=0.15",
+        ).to(
+          media[i],
+          { autoAlpha: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)" },
+          "<",
+        );
+      });
+
+      // Fase 3 — "explosión" suave: se alejan un poco más, sin golpes bruscos.
+      tl.addLabel("explode", "+=0.2");
+      media.forEach((el, i) => {
+        tl.to(
+          el,
+          {
+            x: scatter[i].x * 1.6,
+            y: scatter[i].y * 1.6,
+            rotate: scatter[i].rotate * 1.4,
+            duration: 0.7,
+            ease: "sine.inOut",
+          },
+          `explode+=${i * 0.05}`,
+        );
+      });
+
+      // Fase 4 — vuelven a su lugar y "WORKS" se reforma; el pin se libera al
+      // terminar el timeline y el scroll continúa normal.
+      const reformOrder = gsap.utils.shuffle(media.map((_, i) => i));
+      tl.addLabel("reform", "+=0.3");
+      reformOrder.forEach((i, rank) => {
+        tl.to(
+          media[i],
+          {
+            autoAlpha: 0,
+            scale: 0.4,
+            x: 0,
+            y: 0,
+            rotate: 0,
+            duration: 0.45,
+            ease: "power2.inOut",
+          },
+          `reform+=${rank * 0.12}`,
+        ).to(
+          letters[i],
+          { autoAlpha: 1, scale: 1, duration: 0.4, ease: "power2.out" },
+          "<+0.1",
+        );
+      });
+    }, section);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section
+      id="works"
+      ref={sectionRef}
+      aria-label="Works"
+      className="relative min-h-[100dvh] overflow-hidden bg-bg"
+    >
+      <span className="sr-only">{FULL_TEXT}</span>
+
+      <div className="absolute inset-0 flex items-center justify-center px-6">
+        {INTRO_PHRASES.map((text, i) => (
+          <span
+            key={text}
+            ref={(el) => {
+              phraseRefs.current[i] = el;
+            }}
+            aria-hidden="true"
+            className="absolute opacity-0 text-center font-sans font-semibold tracking-tight text-fg text-[clamp(2rem,6vw,4.5rem)]"
+          >
+            {text}
+          </span>
+        ))}
+
+        <div ref={wordRef} className="relative flex items-center justify-center">
+          {WORD.split("").map((char, i) => (
+            <span key={char + i} className="relative mx-1 inline-block sm:mx-2">
+              <span
+                ref={(el) => {
+                  letterRefs.current[i] = el;
+                }}
+                aria-hidden="true"
+                className="inline-block font-sans font-extrabold tracking-tight text-fg text-[clamp(3rem,12vw,9rem)]"
+              >
+                {char}
+              </span>
+              <div
+                ref={(el) => {
+                  mediaRefs.current[i] = el;
+                }}
+                aria-hidden="true"
+                className="pointer-events-none absolute left-1/2 top-1/2 h-[clamp(4.5rem,14vw,8rem)] w-[clamp(4.5rem,14vw,8rem)] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl bg-white/5 opacity-0"
+              >
+                {PROJECTS[i] ? (
+                  <img
+                    src={PROJECTS[i].src}
+                    alt={PROJECTS[i].alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
+                ) : null}
+              </div>
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/WorksShowCase.tsx">
+// src/components/WorksShowcase.tsx
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+
+type WorkItem = {
+  title: string;
+  tags: string[];
+  image: string;
+  alt: string;
+  href: string;
+  color: string; // color de marca que inunda el fondo en hover
+  ink: string;   // color de texto/detalle legible sobre ese fondo
+};
+
+// Estado en reposo: gris editorial cálido (cambialo por bg oscuro si preferís)
+const REST_BG = "#0a0a0b";
+const REST_INK = "#e7e5e0";
+
+const WORKS: WorkItem[] = [
+  { title: "Agroecología", tags: ["Investigación", "Producto", "IA"], image: "/001.jpg", alt: "Vista previa de Agroecología", href: "#", color: "#43c26d", ink: "#241a00" },
+  { title: "Regen",   tags: ["Ingeniería", "IA", "Investigación"],           image: "/Regen_Image.png", alt: "Vista previa del proyecto 2",  href: "#", color: "#ffc73a", ink: "#241a00" },
+  { title: "Proteus",   tags: ["Ingeniería", "IA", "Investigación"],                image: "/Proteus_Image.png", alt: "Vista previa del proyecto 3",  href: "#", color: "#1f6feb", ink: "#eaf1ff" },
+  { title: "Proyecto 4",   tags: ["Producto"],                       image: "/004.jpg", alt: "Vista previa del proyecto 4",  href: "#", color: "#c3b2ff", ink: "#241a00" },
+  { title: "Proyecto 5",   tags: ["Campaña", "Contenido"],           image: "/005.jpg", alt: "Vista previa del proyecto 5",  href: "#", color: "#e8362b", ink: "#fff2f0" },
+];
+
+export default function WorksShowcase() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const bgRef = useRef<HTMLDivElement>(null);
+  const parallaxRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState<number | null>(null);
+  const [canHover, setCanHover] = useState(false);
+  const moveRef = useRef<((v: number) => void) | null>(null);
+
+  // Capacidad de hover + parallax suave del preview
+  useEffect(() => {
+    setCanHover(window.matchMedia("(hover: hover) and (pointer: fine)").matches);
+    const el = parallaxRef.current;
+    if (!el) return;
+    moveRef.current = gsap.quickTo(el, "y", { duration: 0.9, ease: "power3" });
+  }, []);
+
+  // El fondo se inunda con el color del proyecto activo
+  useEffect(() => {
+    const bg = bgRef.current;
+    if (!bg) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    gsap.to(bg, {
+      backgroundColor: active === null ? REST_BG : WORKS[active].color,
+      duration: reduce ? 0 : 0.6,
+      ease: "power2.out",
+      overwrite: true,
+    });
+  }, [active]);
+
+  const handleMove = (e: React.MouseEvent<HTMLElement>) => {
+    if (!canHover || !moveRef.current) return;
+    const rect = sectionRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const relY = (e.clientY - rect.top) / rect.height - 0.5; // -0.5..0.5
+    moveRef.current(relY * 60); // deriva vertical sutil
+  };
+
+  const ink = active === null ? REST_INK : WORKS[active].ink;
+
+  return (
+    <section
+      id="works"
+      ref={sectionRef}
+      onMouseMove={handleMove}
+      onMouseLeave={() => setActive(null)}
+      aria-label="Selected works"
+      className="relative min-h-[100dvh] overflow-x-clip"
+    >
+      {/* Fondo que cambia de color */}
+      <div ref={bgRef} aria-hidden="true" className="absolute inset-0 -z-10" style={{ backgroundColor: REST_BG }} />
+
+      {/* Encabezado: etiqueta + contador */}
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-center justify-between px-6 py-8 font-ui text-sm transition-colors duration-500 sm:px-12 lg:px-16"
+        style={{ color: ink, opacity: 0.65 }}
+      >
+      </div>
+
+      {/* Preview anclado a la derecha */}
+      {canHover && (
+        <div className="pointer-events-none absolute right-[4vw] top-1/2 z-10 hidden -translate-y-1/2 lg:block">
+          <div ref={parallaxRef} className="will-change-transform">
+            <div
+              className="relative h-[46vh] w-[34vw] max-w-[560px] overflow-hidden rounded-[14px] shadow-2xl shadow-black/25 ring-1 ring-black/10 transition-all duration-500 ease-out"
+              style={{
+                opacity: active === null ? 0 : 1,
+                transform: active === null ? "translateX(48px) scale(0.96)" : "translateX(0) scale(1)",
+                clipPath: active === null ? "inset(10% 0 10% 0 round 14px)" : "inset(0% 0 0% 0 round 14px)",
+              }}
+            >
+              {WORKS.map((work, i) => (
+                <img
+                  key={work.title}
+                  src={work.image}
+                  alt=""
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-[opacity,transform] duration-700 ease-out"
+                  style={{ opacity: active === i ? 1 : 0, transform: `scale(${active === i ? 1.05 : 1})` }}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Lista de proyectos */}
+      <ul className="relative z-20 flex min-h-[100dvh] flex-col justify-center px-6 sm:px-12 lg:px-16 lg:pr-[42vw]">
+        {WORKS.map((work, i) => {
+          const isActive = active === i;
+          const dimmed = active !== null && !isActive;
+          const showTags = isActive || !canHover;
+          return (
+            <li
+              key={work.title}
+            >
+              <a
+                href={work.href}
+                onMouseEnter={() => setActive(i)}
+                onFocus={() => setActive(i)}
+                onBlur={() => setActive(null)}
+                className="group block py-[2vh] no-underline outline-none"
+                style={{ color: ink }}
+              >
+                <div className="flex items-baseline gap-4 sm:gap-6">
+                  <span
+                    className="hidden w-10 shrink-0 font-ui text-sm tabular-nums transition-opacity duration-300 sm:block"
+                    style={{ opacity: dimmed ? 0.3 : 0.5 }}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+
+                  <span
+                    className="font-sans font-medium leading-[0.95] tracking-[-0.02em] text-[clamp(2.4rem,7vw,6rem)] transition-[opacity,transform] duration-500 ease-out"
+                    style={{
+                      opacity: dimmed ? 0.32 : 1,
+                      transform: isActive ? "translateX(14px)" : "translateX(0)", }}
+                    
+                  >
+                    {work.title}
+                  </span>
+
+                  <span
+                    className="ml-auto hidden shrink-0 text-2xl transition-[transform,opacity] duration-500 ease-out group-hover:translate-x-1 sm:block"
+                    style={{ opacity: isActive ? 1 : 0 }}
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        d="M7 17L17 7"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M10 7H17V14"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                {/* Tags: se despliegan con animación de altura (grid 0fr → 1fr) */}
+                <div
+                  className="grid transition-all duration-500 ease-out"
+                  style={{ gridTemplateRows: showTags ? "1fr" : "0fr", opacity: showTags ? 1 : 0 }}
+                >
+                  <div className="min-h-0 overflow-hidden">
+                    <div className="flex flex-wrap gap-2 pt-3 sm:pl-16">
+                      {work.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="whitespace-nowrap rounded-full border px-3 py-1 font-ui text-[0.7rem]"
+                          style={{ borderColor: `${ink}40`, color: ink }}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+</file>
+
+</files>

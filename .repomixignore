@@ -1,0 +1,7 @@
+README.md
+pnpm-lock.yaml
+pnpm-workspace.yaml
+tsconfig.json
+.gitignore
+node_modules
+.next
